@@ -1,3 +1,4 @@
+/*
 let country= "Brazil";
 let continet = "South American";
 let population = "260,000.000";
@@ -27,7 +28,7 @@ console.log(numero);
 let myTest1 = 20;
  myTest1 = 30;
  console.log(myTest1);
-
+*/
 
 
 
