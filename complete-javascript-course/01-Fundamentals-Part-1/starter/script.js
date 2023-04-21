@@ -37,7 +37,7 @@ console.log(typeof null);
 let test = "";
 console.log(typeof test);
 */
-
+/*
 let age = 30;
 age = 32;
 
@@ -47,3 +47,29 @@ const birthYear = 1990;
 
 lastName = 'Oliveira';  // This is possible to declare an atribute from a variable without declare the type
 console.log(lastName);
+*/
+/*
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+
+const firstName = "José";
+const lastName = "Junior";
+console.log(firstName + " " + lastName);
+
+let x = 10 + 5;
+x += 10;
+x*= 4;
+x++;
+x--;
+x--;
+console.log(x);
+
+console.log(ageSarah > ageJonas);
+console.log(ageSarah >= 18);
+
+console.log(now - 1991 > now - 2018);
+*/
