@@ -73,3 +73,35 @@ console.log(ageSarah >= 18);
 
 console.log(now - 1991 > now - 2018);
 */
+
+/*
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 -5;
+console.log(x,y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log('age = ' + ageJonas, 'age = ' + ageSarah, 'average = ' + averageAge);
+*/
+
+//EXERCICE
+
+let markMass = 78;
+let markHeight = 1.69;
+
+let JohnMass = 92;
+let johnHeight = 1.95;
+
+const BMIMARK = markMass / markHeight  ** 2;
+const BMIJOHN = JohnMass / johnHeight ** 2;
+console.log(BMIMARK,BMIJOHN)
+
+let markHigherBMI = BMIMARK > BMIJOHN;
+console.log(markHigherBMI);
+
+
