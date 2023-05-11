@@ -91,6 +91,7 @@ console.log('age = ' + ageJonas, 'age = ' + ageSarah, 'average = ' + averageAge)
 
 //EXERCICE
 
+/*
 let markMass = 78;
 let markHeight = 1.69;
 
@@ -103,5 +104,16 @@ console.log(BMIMARK,BMIJOHN)
 
 let markHigherBMI = BMIMARK > BMIJOHN;
 console.log(markHigherBMI);
+*/
 
+const firstName = 'Junior';
+const job = 'Developer';
+const birthYear = 1990;
+const year = 2037;
+
+const junior = "I'm" + firstName + " a " + (year - birthYear) + " years old " + job + " ! ";
+console.log(junior);
+
+const junior2 = `I'm ${firstName}, a ${year - birthYear}  years old ${job}! `;
+                console.log(junior2);
 
