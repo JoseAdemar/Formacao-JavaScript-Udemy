@@ -43,7 +43,7 @@ age = 32;
 
 const birthYear = 1990;
 // birthYear = 1990; I can't do that because it's a constant
-// const job; I can't do that because a constant must be inicialized 
+// const job; I can't do that because a constant must be inicialized
 
 lastName = 'Oliveira';  // This is possible to declare an atribute from a variable without declare the type
 console.log(lastName);
@@ -105,7 +105,7 @@ console.log(BMIMARK,BMIJOHN)
 let markHigherBMI = BMIMARK > BMIJOHN;
 console.log(markHigherBMI);
 */
-
+/*
 const firstName = 'Junior';
 const job = 'Developer';
 const birthYear = 1990;
@@ -116,4 +116,36 @@ console.log(junior);
 
 const junior2 = `I'm ${firstName}, a ${year - birthYear}  years old ${job}! `;
                 console.log(junior2);
+
+*/
+
+const age = 15;
+
+if(age >= 18){
+    console.log('Sarah can start driving license 🚗');
+}else{
+    const yearsLeft = 18 - age;
+    console.log(`Sarah can not driving she is to young .
+     Wait another ${yearsLeft} years 😧`);
+}
+
+
+let markMass = 78;
+let markHeight = 1.69;
+
+let JohnMass = 120;
+let johnHeight = 1.95;
+
+const BMIMARK = markMass / markHeight  ** 2;
+const BMIJOHN = JohnMass / johnHeight ** 2;
+
+if(BMIMARK > BMIJOHN){
+    console.log(`Mark has the BMI bigger than Jhon
+                 the BMI of Mark is:  ${BMIMARK}`)
+}else{
+    console.log(`Jhon has the BMI bigger than Mark
+                 the BMI of Jhon is:  ${BMIJOHN}`)
+}
+console.log(BMIMARK,BMIJOHN);
+
 
