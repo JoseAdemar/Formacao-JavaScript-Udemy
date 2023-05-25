@@ -119,6 +119,7 @@ const junior2 = `I'm ${firstName}, a ${year - birthYear}  years old ${job}! `;
 
 */
 
+/*
 const age = 15;
 
 if(age >= 18){
@@ -148,4 +149,17 @@ if(BMIMARK > BMIJOHN){
 }
 console.log(BMIMARK,BMIJOHN);
 
+*/
 
+// Convertion and coersion
+// NaN é a number porém um tipo de número invalido
+
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);  //Convertendo string para numero
+
+console.log(Number(inputYear) + 18);
+
+valor = 23;
+console.log(String(valor) + 1); //Convertendo número para string
+
+console.log('23' - '10' - 3); //Quando temos string com o operador de menos as strings é convertida em número e a subtração é realizada.
