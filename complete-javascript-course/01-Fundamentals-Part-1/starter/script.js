@@ -169,6 +169,7 @@ console.log('23' - '10' - 3); //Quando temos string com o operador de menos as s
 // 5 tipos falso do javascript
 // valores:  0, '', undefined, null, NaN
 
+/*
 console.log(Boolean(0))
 console.log(Boolean(undefined))
 console.log(Boolean('Jonas'))
@@ -188,3 +189,29 @@ if(height){
 }else{
     console.log("height is undefined");
 }
+*/
+
+const age = 18;
+if(age === 18){
+    console.log('You just became an adult')
+}
+
+const age2 = '18';
+if(age2 === 18){
+   console.log('You just became an adult')
+}else{
+    console.log('You still not an adult')
+}
+
+const age3 = '18';
+if(age3 == 18){
+    console.log('You just became an adult')
+ }else{
+     console.log('You still not an adult')
+ }
+
+ let favourite = prompt("what's your favourite number ?");
+
+ if(Number(favourite) === 7){
+    console.log(`Coll! ${favourite} is an amazing number!`)
+ }
