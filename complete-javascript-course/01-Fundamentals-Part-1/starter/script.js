@@ -191,6 +191,7 @@ if(height){
 }
 */
 
+/*
 const age = 18;
 if(age === 18){
     console.log('You just became an adult')
@@ -215,3 +216,34 @@ if(age3 == 18){
  if(Number(favourite) === 7){
     console.log(`Coll! ${favourite} is an amazing number!`)
  }
+*/
+
+/*
+let scoreDolphins1 = 101;
+let scoreDolphins2 = 100;
+let scoreDolphins3 = 100;
+let scoreDolphins =  (scoreDolphins1 + scoreDolphins2 + scoreDolphins3) / 3;
+
+
+let scoreKoalas1 = 100;
+let scoreKoalas2 = 100;
+let scoreKoalas3 = 100;
+let scoreKoalas = (scoreKoalas1 + scoreKoalas2 + scoreKoalas3) / 3;
+
+console.log(scoreDolphins, scoreKoalas);
+
+if(scoreDolphins == scoreKoalas){
+    console.log("Both win the trophy");
+    console.log('score = ' + scoreDolphins);
+    console.log('score = ' + scoreKoalas)
+}else if(scoreDolphins > scoreKoalas){
+    console.log('Dolphins win the trophy');
+    console.log('score = ' + scoreDolphins);
+}else{
+    console.log("Koalas win the trophy");
+    console.log('score = ' + scoreKoalas);
+}
+
+*/
+
+
