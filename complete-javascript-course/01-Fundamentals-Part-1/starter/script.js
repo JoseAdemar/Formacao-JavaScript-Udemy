@@ -300,7 +300,7 @@ age >= 23 ? console.log('I like to drink wine 🍹') : console('I like to drink 
 const drink = age >= 30 ? 'Drink 🍹🍹' : 'water🥃🥃';
 console.log(drink);
 
-
+/*
 let tip = 0;
 let bill = 275;
 let totalBill = 0;
@@ -309,3 +309,14 @@ let getBillPorcentage = bill >= 50 || bill <=300 ? tip = 15 : tip = 20
 
 let percentage = (getBillPorcentage / 100) * bill
 console.log(`The bill was ${bill}, the tip was ${percentage}, and the total value ${percentage+bill} `);
+*/
+
+const bill = 275;
+
+/* Write your code below. Good luck! 🙂 */
+
+let tip = bill >= 50 || bill <=300 ? (15/100) * bill : (20/100 ) * bill;
+
+let totalValue = tip + bill;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`);
