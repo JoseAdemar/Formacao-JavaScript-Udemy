@@ -42,7 +42,7 @@ const num = Number('23'); // a função Number converte a string para número.
 console.log(num);
 */
 
-
+/*
 //Function declaration
 function calcAge1(birthYear){
     return 2037 - birthYear;
@@ -57,9 +57,30 @@ const calAge2 = function(birthYear){
 }
 const age2 = calAge2(1991);
 console.log(age2);
+*/
 
 /* Qual a diferença entre função de declaração e função de expressão ?
    A diferença é que na função de declaração eu posso chamar a função antes dela
    já na função de expressão eu tenho que chamar depois dela.
 */
+
+// Em arow function o que tem antes da arow seria os parametros do método a arow é o que 
+ // se espera de ReadableByteStreamController.
+
+const calAge3 = birthYear => 2037 - birthYear;
+const age3 = calAge3(1991);
+console.log(" A idade é " + age3);
+console.log(" A idade é " + calAge3(1990));
+
+// Quando eu tenho mais de dois parametros em uma arow function eu deixo eles entre parenteses
+const yearsUntilRetirement = (birthYear,firstName) => {
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
+    const retirement = 65 - age;
+    return (`${firstName} retires in ${retirement} years`);
+}
+
+console.log(yearsUntilRetirement (1990,'JUNIOR'));
+console.log(yearsUntilRetirement(1988,'MARIA'));
+
 
