@@ -66,7 +66,7 @@ console.log(age2);
 
 // Em arow function o que tem antes da arow seria os parametros do método a arow é o que 
  // se espera de ReadableByteStreamController.
-
+/*
 const calAge3 = birthYear => 2037 - birthYear;
 const age3 = calAge3(1991);
 console.log(" A idade é " + age3);
@@ -82,5 +82,41 @@ const yearsUntilRetirement = (birthYear,firstName) => {
 
 console.log(yearsUntilRetirement (1990,'JUNIOR'));
 console.log(yearsUntilRetirement(1988,'MARIA'));
+*/
 
+/*
+function cutFruitPieces(fruit){
+    return fruit * 4;
+}
 
+function fruitProcessor(apples, oranges){
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with  ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
+
+console.log(fruitProcessor(2,3));
+*/
+
+const calAge = function(birthYear){
+    return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function(birthYear,firstName){
+    const age = calAge(birthYear);
+    const retirement = 65-age;
+
+    if(retirement > 0){
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    }else{
+        console.log(`${firstName} has already retired 🤩`);
+        return -1;
+    }
+
+}
+
+console.log(yearsUntilRetirement(1991, 'Junior'));
+console.log(yearsUntilRetirement(1950, 'Mike'));
