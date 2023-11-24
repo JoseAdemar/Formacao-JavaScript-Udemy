@@ -150,6 +150,7 @@ const checkWinner  = function(avgDolphins , avgKoalas){
 checkWinner(scoreDolphins,scoreKoalas);
 checkWinner(576,111); */
 
+/*
 const calcAverage = (score1,score2,score3) => {
     let average = (score1 + score2 + score3) / 3;
     return average;
@@ -176,3 +177,28 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 
 checkWinner(scoreDolphins,scoreKoalas);
+*/
+
+const friends = ['Michael','Steven','Peter'];
+console.log(friends.length);
+console.log(friends[0]);
+
+const year = new Array(1991, 1984, 2008, 2020);
+console.log(year[0]);
+
+// Exercice
+
+const calAge = function(birthYeah){
+    return 2037 - birthYeah;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calAge(years[0]);
+const age2 = calAge(years[1]);
+const age3 = calAge(years[years.length - 1]);
+
+console.log(age1,age2,age3);
+
+const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length - 1])];
+console.log(ages);
