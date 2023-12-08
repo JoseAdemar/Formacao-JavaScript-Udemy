@@ -65,7 +65,7 @@ console.log(age2);
 */
 
 // Em arow function o que tem antes da arow seria os parametros do método a arow é o que 
- // se espera de ReadableByteStreamController.
+// se espera de ReadableByteStreamController.
 /*
 const calAge3 = birthYear => 2037 - birthYear;
 const age3 = calAge3(1991);
@@ -179,7 +179,7 @@ scoreKoalas = calcAverage(23, 34, 27);
 checkWinner(scoreDolphins,scoreKoalas);
 */
 
-const friends = ['Michael','Steven','Peter'];
+/*const friends = ['Michael','Steven','Peter'];
 console.log(friends.length);
 console.log(friends[0]);
 
@@ -201,4 +201,34 @@ const age3 = calAge(years[years.length - 1]);
 console.log(age1,age2,age3);
 
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length - 1])];
-console.log(ages);
+console.log(ages);*/
+
+// Adiciona elementos
+const friends = ['Michael', 'Steven', 'Peter'];
+friends.push('Jey');
+console.log(friends);
+friends.unshift('Jonh');
+console.log(friends);
+
+// Remove elementos
+
+friends.pop(); //Remove o ultimo elemento do array
+console.log(friends);
+
+friends.shift(); //Remove o primeiro elemento do array
+console.log(friends);
+
+console.log(friends.indexOf('Steven')); //pega a posição do array para Steven
+console.log(friends.includes('Steven'));
+console.log(friends.includes('José')); //Includes verifica se o elemento está ou não no array como um boleano.
+
+if (friends.includes('Peter')) {
+    console.log('Você tem um amigo chamado Peter');
+}
+
+
+
+
+
+
+
