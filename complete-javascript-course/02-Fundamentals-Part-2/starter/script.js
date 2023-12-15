@@ -204,6 +204,7 @@ const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length - 1]
 console.log(ages);*/
 
 // Adiciona elementos
+/*
 const friends = ['Michael', 'Steven', 'Peter'];
 friends.push('Jey');
 console.log(friends);
@@ -225,9 +226,39 @@ console.log(friends.includes('José')); //Includes verifica se o elemento está 
 if (friends.includes('Peter')) {
     console.log('Você tem um amigo chamado Peter');
 }
+*/
+/*
+const calTip1 = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
+const calTip2 = (bill) => {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
 
+const calTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
 
+const bills = [125, 555, 44];
+const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+console.log(bills, tips);
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(totals);
+*/
+
+const junior = {
+    firName: 'José',
+    lastName: 'Junior',
+    age: 2023 - 1990,
+    job: 'Developer',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(junior.firName, 'age =', junior.age, junior.friends);
+
+junior.firName = 'Pedro';
+
+console.log(junior.firName, 'age =', junior.age, junior.friends);
 
 
 
