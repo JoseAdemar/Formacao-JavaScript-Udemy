@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 let hasDriersLicense = false;
@@ -64,7 +64,7 @@ console.log(age2);
    já na função de expressão eu tenho que chamar depois dela.
 */
 
-// Em arow function o que tem antes da arow seria os parametros do método a arow é o que 
+// Em arow function o que tem antes da arow seria os parametros do método a arow é o que
 // se espera de ReadableByteStreamController.
 /*
 const calAge3 = birthYear => 2037 - birthYear;
@@ -247,19 +247,46 @@ console.log(totals);
 */
 
 const junior = {
-    firName: 'José',
-    lastName: 'Junior',
+    firstName: "José",
+    lastName: "Junior",
     age: 2023 - 1990,
-    job: 'Developer',
-    friends: ['Michael', 'Peter', 'Steven']
+    job: "Developer",
+    friends: ["Michael", "Peter", "Steven"],
 };
 
-console.log(junior.firName, 'age =', junior.age, junior.friends);
+console.log(junior.firName, "age =", junior.age, junior.friends);
 
-junior.firName = 'Pedro';
+junior.firstName = "Pedro";
 
-console.log(junior.firName, 'age =', junior.age, junior.friends);
+console.log(junior.firName, "age =", junior.age, junior.friends);
+
+console.log("#############################################");
+console.log(junior);
+console.log(junior["firName"]);
+console.log("=========================================================");
+
+const interestedIn = prompt(
+    "What do you want to know about Junior ? Choose between firstName, lastName, age, job, and friends"
+);
+
+if (junior[interestedIn]) {
+    console.log(junior[interestedIn]);
+} else {
+    console.log(" Wrong request!! What do you want to know about Junior ? Choose between firName, lastName, age, job, and friends");
+}
+
+console.log('##############################################');
 
 
+const showMessage = function () {
+    console.log(`${junior.firstName} has ${junior.friends.length} , and his best friend is called ${junior.friends[0]}`)
+}
 
+const bestFriend = prompt('What is Junior best friend ?');
 
+if (junior[bestFriend]) {
+    if (junior.firstName == 'Pedro') {
+        showMessage();
+    }
+
+}
