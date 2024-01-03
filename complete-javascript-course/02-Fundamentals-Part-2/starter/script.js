@@ -246,6 +246,7 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
 */
 
+/*
 const junior = {
     firstName: "José",
     lastName: "Junior",
@@ -289,4 +290,88 @@ if (junior[bestFriend]) {
         showMessage();
     }
 
+}
+*/
+
+/*
+const junior = {
+    firstName: "José",
+    lastName: "Junior",
+    birthYear: 1990,
+    job: "Developer",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicense: true,
+    //calcAge: function (birthYeah) {
+    //return 2037 - birthYeah;
+    //}
+    //calcAge: function () {
+    //console.log(this);
+    //return 2037 - this.birthYear;
+    //}
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        this.hasDriversLicense = true;
+        /*if (this.hasDriversLicense) {
+                return this.message = `${junior.firstName} is a ${junior.calcAge()} old teacheer, and he has a driver's licence`;
+            } else {
+                return this.message = `${junior.firstName} is a ${junior.calcAge()} old teacheer, and he does not have a driver's licence`;
+            }*/
+
+// return (this.message = `${junior.firstName} is a 
+//${junior.calcAge()} old teacheer, and he has 
+//${this.hasDriversLicense ? "a" : "no"
+//  } driver's licence`);
+//},
+//};
+
+/*
+console.log(junior.calcAge());
+console.log(junior.age);
+console.log("####################################");
+console.log(junior.getSummary());
+console.log(junior.message);
+//console.log(junior['calcAge']());
+
+*/
+
+
+/*
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi.toFixed(2);
+    },
+};
+
+const John = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi.toFixed(2);
+    },
+};
+
+if (mark.calcBMI() > John.calcBMI()) {
+    console.log(mark.fullName + "'s " + 'BMI (' + mark.bmi.toFixed(2) + ')' + ' is higher than ' + John.fullName + "'s " + 'BMI (' + John.bmi.toFixed(2) + ') ');
+} else {
+    console.log(John.fullName + "'s " + 'BMI (' + John.bmi.toFixed(2) + ') ' + ' is higher than ' + mark.fullName + '(' + mark.bmi.toFixed(2) + ')');
+}
+
+//console.log(mark.calcBMI() > John.calcBMI() ? mark.fullName + "'s " + 'BMI (' + mark.bmi.toFixed(2) + ')' + ' is higher than ' + John.fullName + "'s " + 'BMI (' + John.bmi.toFixed(2) + ') ' :
+//John.fullName + "'s " + 'BMI (' + John.bmi.toFixed(2) + ') ' + ' is higher than ' + mark.fullName + '(' + mark.bmi.toFixed(2) + ')');
+
+*/
+for (let i = 1; i <= 10; i++) {
+    console.log('Lifting weights repetition' + i + ' 🏋️‍♂️');
 }
