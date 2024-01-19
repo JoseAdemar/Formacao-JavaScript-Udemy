@@ -372,6 +372,112 @@ if (mark.calcBMI() > John.calcBMI()) {
 //John.fullName + "'s " + 'BMI (' + John.bmi.toFixed(2) + ') ' + ' is higher than ' + mark.fullName + '(' + mark.bmi.toFixed(2) + ')');
 
 */
+
+/*
 for (let i = 1; i <= 10; i++) {
     console.log('Lifting weights repetition' + i + ' 🏋️‍♂️');
 }
+*/
+
+/*
+const types = [];
+
+const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher', ['Michael', 'Peter', 'Steven'], true];
+
+for (let i = 0; jonas.length > i; i++) {
+    console.log(jonas[i], typeof jonas[i]);
+    //types.push(typeof jonas[i]);
+    types[i] = typeof jonas[i];
+}
+
+console.log(types);
+
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    //ages[i] = 2037 - years[i];
+    ages.push(2037 - years[i]);
+
+}
+
+console.log(ages);
+
+// continue and break
+
+console.log('-------ONLY STRINGS--------------');
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+    console.log(jonas[i], typeof jonas[i]);
+    types[i] = typeof jonas[i];
+}
+
+console.log('-------BREAK WITH NUMBER--------------');
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break;
+    console.log(jonas[i], typeof jonas[i]);
+    types[i] = typeof jonas[i];
+}
+*/
+
+/*const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher', ['Michael', 'Peter', 'Steven'], true];
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}*/
+
+/*
+for (let exercice = 1; exercice < 4; exercice++) {
+    console.log(`-------Starting exercice  ${exercice}`);
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercice ${exercice}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+    }
+}*/
+
+/*
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice == 6) {
+        console.log('Loop ended with ' + dice);
+    }
+}
+*/
+
+/*
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+let tips = [];
+let totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[1]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+
+    console.log(bills, tips, totals);
+}
+
+*/
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    return sum / arr.length;
+}
+
+console.log(calcAverage([2, 3, 7]));
+
+
+
+
